@@ -1,38 +1,95 @@
 .App {
   text-align: center;
+  background: linear-gradient(345deg, #7AB0E0, #005C96);
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  color:white;
+  padding:2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+footer {
+  position: fixed;
+  bottom: 0;
+  background: linear-gradient(90deg, rgb(34,139,34), 	rgb(60,179,113));
+  width: 100%;
+  height: auto;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+h2{
+  color:white;
+  padding:5rem;
+  font-size: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+input{
+  width: 70%;
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 2rem;
+  border-style: none;
+  margin:1rem;
+}
+
+button{
+  width: 70%;
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border-style: none;
+  margin:1rem;
+  color: white;
+  justify-content: center;
+  background: linear-gradient(90deg, rgb(34,139,34), 	rgb(60,179,113));
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+  color: yellow;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width:950px){
+
+  h1{
+    color:white;
+    padding:2rem;
+    font-size: 1.5rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  input{
+    width: 70%;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 2rem;
+    border-style: none;
+    margin:1rem;
   }
+
+  button{
+    width: 70%;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    border-radius: 2rem;
+    border-style: none;
+    margin:1rem;
+    color: white;
+    justify-content: center;
+    background: linear-gradient(90deg, rgb(34,139,34), 	rgb(60,179,113));
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  button:hover{
+    color: yellow;
+    transition: all 0.3s ease-in-out;
+  }
+
 }

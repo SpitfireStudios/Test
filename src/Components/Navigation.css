@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    height: 2em;
+    width: 6rem;
+    display:flex;
+    margin-left: 1rem;
+    justify-self: start;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.Navigation {
+    display: flex;
+    height: 4rem;
+    background: linear-gradient(90deg, rgb(34,139,34), 	rgb(60,179,113));
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.navDropdown{
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-gap: 1rem;
+    list-style: none;
+    text-align: center;
+    width: 75%;
+    justify-content: end;
+}
+
+.navLinks{
+    color: white;
+    text-decoration: none;
+    padding: .5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.navLinks:hover{
+    color: yellow;
+    transition: all 0.3s ease-in-out;
+}
+
+.navLinksLanguage{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.navLinksLanguage:hover{
+    color: yellow;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.fa-bars{
+    color:white;
+}
+
+.navLinksMobile{
+    display: none;
+}
+
+.menuIcon{
+    display:none;
+}
+
+@media screen and (max-width:950px){
+
+    .navItems{
+        position:relative;
+    }
+
+    .navDropdown{
+        background: linear-gradient(90deg, rgb(34,139,34), 	rgb(60,179,113));
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 4rem;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navDropdown.active{
+        background: linear-gradient(90deg, rgb(34,139,34), 	rgb(60,179,113));
+        left: 0;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+        z-index: 1;
+        left: 0%;
+    }
+
+    .navLinks{
+        text-align: center;
+        padding: 2rem 0;
+        width: 100%;
+        display: table;
+    }
+
+    .navLinks:hover{
+       border-radius: 0;
+       color:  yellow;
+    }
+
+    .logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%, 20%);
+    }
+
+    .menuIcon{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 50%);
+        font-size: 1.8rem;
+        cursor:pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .fa-times{
+        color: white;
+    }
+
+    .navLinksMobile{
+        display: block;
+        text-align: center;
+        padding: .5rem;
+        margin: 1rem auto;
+        border-radius: 3rem;
+        width: 20%;
+        background: white;
+        text-decoration: none;
+        color:  rgb(34,139,34);
+        font-size: 1rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navLinksMobile:hover{
+        color: green;
+        transition: all 0.3s ease-in-out;
+        background: yellow;
+    }
+
+     Button {
+         display: none;
+     }
+
+}
